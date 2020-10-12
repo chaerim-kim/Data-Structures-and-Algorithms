@@ -5,7 +5,7 @@ import random
 import re
 import sys
 
-# Complete the rote rotLeft function below.
+# Complete the rotLeft function below.
 def rotLeft(a, d):
     # split the array into two, then append the two in reversed order
     return a[d:] + a[:d]
