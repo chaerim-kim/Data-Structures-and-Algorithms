@@ -6,53 +6,45 @@ import random
 import re
 import sys
 
-# Complete the sherlockAndAnagrams function below.
 def sherlockAndAnagrams(s):
-    anagramList=[]
-    # result = task in item in range
-    substring = [s[i:j] for i in range(0,len(s)) for j in range(i+1,len(s)+1)]
-    ssubstring = set(substring)
-    print(ssubstring)
+    dict ={}
+    ans=0
 
-    for item in ssubstring:
-        print(sorted(item))
+    # # list comprehension version
+    # # get all substrings of a string & sort the substring, then rejoin them
+    # substring = [''.join(sorted(s[i:j])) for i in range(0,len(s)) for j in range(i+1,len(s)+1)]
+    # print(substring)        #['a', 'ab', 'abb', 'abba', 'b', 'bb', 'bba', 'b', 'ba', 'a']
+    #
+    # # for each substring, get the character frequency key
+    # for item in substring:
+    #     if item not in dict:
+    #         dict[item] = 1
+    #
+    #     # if the substring already exists in dict, count up ans and dict value
+    #     else:
+    #         ans += dict[item]
+    #         dict[item] +=1
+    # print(ans)
 
+    for i in range(0,len(s)):
+        for j in range(i+1,len(s)+1):
+            # get all the substrings
+            sliced = s[i:j]
+            # sort the substirngs, and then join them again
+            joined = ''.join(sorted(sliced))
 
-
-
-    # print (ssubstring)
-    # for i in range(len(substring)-1):
-    #     for j in range(1,len(substring)):
-    #         print(substring[i], substring[j])
-    #         if sorted(substring[i]) == sorted(substring[j]):
-    #             print("Anagram")
-    #             anagramList.append(substring[i])
-    #             anagramList.append(substring[j])
-    #         else:
-    #             print("nope")
-    # print(set(anagramList))
-    # print(len(set(anagramList)))
-    # print(anagramList)
-
+            if joined not in dict:
+                dict[joined] = 1
+            # if the substring already exists in dict, count up ans and dict value
+            else:
+                ans += dict[joined]
+                dict[joined] += 1
+    print(ans)
+    return ans
 
 
 # driver code
-sherlockAndAnagrams("abba")
-
-
-# def is_anagram( string1, string2 ):
-#     a = sorted(string1)
-#     b = sorted(string2)
-#     print(a,b)
-#     if a == b:
-#         print("Anagram")
-#         return True
-#     else:
-#         print("Nope")
-#         return False
-#
-#
-# is_anagram("boo","aab")
+sherlockAndAnagrams("cdcd")
 
 # if __name__ == '__main__':
 #     fptr = open(os.environ['OUTPUT_PATH'], 'w')
