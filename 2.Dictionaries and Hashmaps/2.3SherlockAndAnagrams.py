@@ -10,6 +10,22 @@ def sherlockAndAnagrams(s):
     dict ={}
     ans=0
 
+    for i in range(0,len(s)):
+        for j in range(i+1,len(s)+1):
+            # get all the substrings
+            sliced = s[i:j]
+            # sort the substirngs, and then join them again
+            joined = ''.join(sorted(sliced))
+
+            if joined not in dict:
+                dict[joined] = 1
+            # if the substring already exists in dict, count up ans and dict value
+            else:
+                ans += dict[joined]
+                dict[joined] += 1
+    print(ans)
+    return ans
+
     # # list comprehension version
     # # get all substrings of a string & sort the substring, then rejoin them
     # substring = [''.join(sorted(s[i:j])) for i in range(0,len(s)) for j in range(i+1,len(s)+1)]
@@ -26,21 +42,7 @@ def sherlockAndAnagrams(s):
     #         dict[item] +=1
     # print(ans)
 
-    for i in range(0,len(s)):
-        for j in range(i+1,len(s)+1):
-            # get all the substrings
-            sliced = s[i:j]
-            # sort the substirngs, and then join them again
-            joined = ''.join(sorted(sliced))
 
-            if joined not in dict:
-                dict[joined] = 1
-            # if the substring already exists in dict, count up ans and dict value
-            else:
-                ans += dict[joined]
-                dict[joined] += 1
-    print(ans)
-    return ans
 
 
 # driver code
