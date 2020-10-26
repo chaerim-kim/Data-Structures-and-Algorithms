@@ -1,12 +1,10 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the maximumToys function below.
+# max no of toys he could buy with money k
 def maximumToys(prices, k):
     bought = 0
     prices.sort()
@@ -18,23 +16,17 @@ def maximumToys(prices, k):
     return bought
 
 
-
-# Driver code
+########## Driver code ##########
 maximumToys([1,12,5,111,200,1000,10], 50)
+# Output: 4 ($ 1,5,10,12)
+#################################
 
 # if __name__ == '__main__':
-#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
-#
-#     nk = input().split()
-#
-#     n = int(nk[0])
-#
-#     k = int(nk[1])
-#
-#     prices = list(map(int, input().rstrip().split()))
-#
-#     result = maximumToys(prices, k)
-#
-#     fptr.write(str(result) + '\n')
-#
-#     fptr.close()
+    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    # nk = input().split()
+    # n = int(nk[0])
+    # k = int(nk[1])
+    # prices = list(map(int, input().rstrip().split()))
+    # result = maximumToys(prices, k)
+    # fptr.write(str(result) + '\n')
+    # fptr.close()

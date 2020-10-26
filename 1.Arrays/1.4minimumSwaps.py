@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import math
 import os
 import random
@@ -7,7 +5,7 @@ import re
 import sys
 import time
 
-
+# find the min no. of swaps to get sorted array
 def minimumSwaps(arr):
     corr_idx = 0
     count = 0
@@ -33,9 +31,15 @@ def minimumSwaps(arr):
     return count
 
 
-if __name__ == '__main__':
-    # t0 = time.time()
-    print(minimumSwaps([4,3,1,2]))
-    # t1 = time.time()
-    # print(t1-t0)
-# range slicing
+########## Driver code ##########
+print(minimumSwaps([4,3,1,2]))
+# Output: 3
+#################################
+
+
+# # if __name__ == '__main__':
+#     t0 = time.time()
+#     print(minimumSwaps([4,3,1,2]))
+#     t1 = time.time()
+#     print(t1-t0)
+#     range slicing

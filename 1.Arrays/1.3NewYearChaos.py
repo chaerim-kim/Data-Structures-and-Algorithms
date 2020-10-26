@@ -1,11 +1,11 @@
-
 import math
 import os
 import random
 import re
 import sys
 
-
+# find maximum no of bribes such that it can move 2 forward to get to the final state
+# form original ascending 1,2,3,4,5
 def minimumBribes(q):
     bribe = 0
 
@@ -23,19 +23,23 @@ def minimumBribes(q):
         #         bribe+=1
 
         # Since no one can jump ahead of its original position by more than 2, so any value higher than q[i] can only be till index q[i] -2.
-        # we only compare values that are two ahead. 
+        # we only compare values that are two ahead.
         for j in range(max(0, q[i] - 2),i):
             if q[j] > q[i]:
                 bribe+=1
     print(bribe)
 
 
-if __name__ == '__main__':
-    t = int(input())
+########## Driver code ##########
+minimumBribes([2,1,5,3,4])     # from 1,2,3,4,5
+# Output: 3
+#################################
 
-    for t_itr in range(t):
-        n = int(input())
 
-        q = list(map(int, input().rstrip().split()))
-
-        minimumBribes(q)
+# if __name__ == '__main__':
+#     t = int(input())
+#
+#     for t_itr in range(t):
+#         n = int(input())
+#         q = list(map(int, input().rstrip().split()))
+#         minimumBribes(q)

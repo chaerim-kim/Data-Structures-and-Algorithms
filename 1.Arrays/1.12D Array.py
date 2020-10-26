@@ -4,7 +4,7 @@ import random
 import re
 import sys
 
-# Complete the hourglassSum function below.
+# print the
 def hourglassSum(arr):
     val = 0
     val_list=[]
@@ -20,10 +20,14 @@ def hourglassSum(arr):
     return max(val_list)
 
 
+########## Driver code ##########
+# hourglassSum()
+# Output: 3
+#################################
 
 
-if __name__ == "__main__":
-    arr = []
-
-    for _ in range(6):
-        arr.append(list(map(int, input().rstrip().split())))
+# if __name__ == "__main__":
+#     arr = []
+#
+#     for _ in range(6):
+#         arr.append(list(map(int, input().rstrip().split())))

@@ -1,5 +1,6 @@
 from functools import cmp_to_key
 
+# sort the array byt descending score and ascending name
 class Player:
     def __init__(self, name, score):
         self.name = name

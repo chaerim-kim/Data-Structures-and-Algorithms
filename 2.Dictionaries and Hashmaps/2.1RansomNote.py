@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import math
 import os
 import random
@@ -10,6 +8,8 @@ import sys
 # check if all item in 'note' is in 'magazine'
 def checkMagazine(magazine, note):
     flag = 0
+    magazine = magazine.rstrip().split()
+    note = note.rstrip().split()
 
     # sort the list for faster processing
     magazine.sort()
@@ -43,15 +43,16 @@ def checkMagazine(magazine, note):
     # return
 
 
-if __name__ == '__main__':
-    mn = input().split()
+########## Driver code ##########
+checkMagazine("I have bought a new jacket", "new bought")
+# Output: Yes
+#################################
 
-    m = int(mn[0])
 
-    n = int(mn[1])
-
-    magazine = input().rstrip().split()
-
-    note = input().rstrip().split()
-
-    checkMagazine(magazine, note)
+# if __name__ == '__main__':
+#     mn = input().split()
+#     m = int(mn[0])
+#     n = int(mn[1])
+#     magazine = input().rstrip().split()
+#     note = input().rstrip().split()
+#     checkMagazine(magazine, note)

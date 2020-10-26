@@ -1,12 +1,10 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the countSwaps function below.
+# Number of swaps to sort the array using buuble sort
 def countSwaps(a):
     count = 0
     n = len(a)
@@ -14,6 +12,7 @@ def countSwaps(a):
     if(a == sorted(a)):
         print ("Array is sorted in 0 swaps.")
 
+    # bubble sort
     for i in range(0,n):
         for j in range (0,n-1):
             if a[j] > a[j+1]:
@@ -27,12 +26,14 @@ def countSwaps(a):
 
     return
 
-# Driver Code
-countSwaps([3,2,1])
+
+########## Driver code ##########
+countSwaps([5,4,3,2,1])
+# Output: 10 (4,3,2,1 times each)
+#################################
+
 
 # if __name__ == '__main__':
 #     n = int(input())
-#
 #     a = list(map(int, input().rstrip().split()))
-#
 #     countSwaps(a)

@@ -1,11 +1,10 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
+# The number of anagrams that can be made from s's substrings
 def sherlockAndAnagrams(s):
     dict ={}
     ans=0
@@ -44,20 +43,17 @@ def sherlockAndAnagrams(s):
 
 
 
-
-# driver code
+########## Driver code ##########
 sherlockAndAnagrams("cdcd")
+# substring = ['c', 'cd', 'ccd', 'ccdd', 'd', 'cd', 'cdd', 'c', 'cd', 'd']
+# Output: 5
+#################################
 
 # if __name__ == '__main__':
 #     fptr = open(os.environ['OUTPUT_PATH'], 'w')
-#
 #     q = int(input())
-#
 #     for q_itr in range(q):
 #         s = input()
-#
 #         result = sherlockAndAnagrams(s)
-#
 #         fptr.write(str(result) + '\n')
-#
 #     fptr.close()
