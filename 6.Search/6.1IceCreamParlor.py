@@ -7,17 +7,29 @@ from collections import Counter
 
 # Complete the whatFlavors function below.
 def whatFlavors(cost, money):
-    dict = {}
 
-    for i,v in enumerate(cost,start=1):
-        if v not in dict and v < money:
-            dict[money-v] = [i,v]
+    dic = dict()
+    for pos,v in enumerate(cost):
+        if v not in dic:
+            dic[money-v] = pos+1
         else:
-            print((dict[v])[0],i)
-            break
-    # print (dict)
+            print(dic[v], pos+1)
 
-    # c1 = Counter(money)
+        # print(dic)
+        # if money > v:
+        #     rm = money-v
+        #
+        #     if rm in cost and v+rm ==money :
+        #         if rm == v:
+        #             # print(cost[i:])
+        #             print("boop")
+        #             print(i, cost[i:].index(rm)+i+1)
+        #             break
+        #         else:
+        #             print (v,rm)
+        #             print(i,cost.index(rm)+1)
+        #             break
+
 
 
 whatFlavors([2,2,4,3],4)
