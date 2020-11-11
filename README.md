@@ -15,22 +15,22 @@
 |                                | [Sherlock and Anagrams](https://github.com/chaerim-kim/HackerRank/blob/master/2.Dictionaries%20and%20Hashmaps/2.3SherlockAndAnagrams.py) | 2 |
 |                                | Count Triplets                                        | 2 |
 |                                | Frequency Queries                                     | 2 |
-| **Sorting**                    | Bubble Sort                                           | 1 |
-|                                | Mark and Toys                                         | 1 |
-|                                | Comparator                                            | 2 |
+| **Sorting**                    | [Bubble Sort](https://github.com/chaerim-kim/HackerRank/blob/master/3.Sorting/3.1BubbleSort.py) | 1 |
+|                                | [Mark and Toys](https://github.com/chaerim-kim/HackerRank/blob/master/3.Sorting/3.2MarkAndToys.py) | 1 |
+|                                | [Comparator](https://github.com/chaerim-kim/HackerRank/blob/master/3.Sorting/3.3Comparator.py) | 2 |
 |                                | Fraudulent Activity Notifications                     | 2 |
 |                                | Counting Inversions - Merge Sort                      | 3 |
-| **String Manipulation**        | Making Anagrams                                       | 1 |
-|                                | Alternating Characters                                | 1 |
-|                                | Sherlock and Valid String                             | 2 |
+| **String Manipulation**        | [Making Anagrams](https://github.com/chaerim-kim/HackerRank/blob/master/4.String%20Manipulation/4.1MakingAnagrams.py) | 1 |
+|                                | [Alternating Characters](https://github.com/chaerim-kim/HackerRank/blob/master/4.String%20Manipulation/4.2AlternatingCharacters.py) | 1 |
+|                                | [Sherlock and Valid String](https://github.com/chaerim-kim/HackerRank/blob/master/4.String%20Manipulation/4.3SherlockValidString.py) | 2 |
 |                                | Special String Again                                  | 2 |
 |                                | Common Child                                          | 2 |
-| **Greedy Algorithms**          | Minimum Absolute Difference in an Array               | 1 |
+| **Greedy Algorithms**          | [Minimum Absolute Difference in an Array](https://github.com/chaerim-kim/HackerRank/blob/master/5.Greedy%20Algorithms/5.1MinAbsDiff.py) | 1 |
 |                                | Luck Balance                                          | 1 |
-|                                | Greedy Florist                                        | 2 |
+|                                | [Greedy Florist](https://github.com/chaerim-kim/HackerRank/blob/master/5.Greedy%20Algorithms/5.3GreedyFlorist.py) | 2 |
 |                                | Max Min                                               | 2 |
 |                                | Reverse Shuffle Merge                                 | 3 |
-| **Search**                     | Hash Tables: Ice Cream Parlor                         | 2 |
+| **Search**                     | [Hash Tables: Ice Cream Parlor](https://github.com/chaerim-kim/HackerRank/blob/master/6.Search/6.1IceCreamParlor.py) | 2 |
 |                                | Swap Nodes \[Algo\]                                   | 2 |
 |                                | Pairs                                                 | 2 |
 |                                | Triple Sum                                            | 2 |
