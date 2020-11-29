@@ -52,15 +52,15 @@
 |                                | BFS: Shortest Reach in a Graph                        | 3 |
 |                                | DFS: Connected Cell in a Grid                         | 3 |
 |                                | Matrix                                                | 3 |
-| **Trees**                      | [Tree: Height of a Binary Tree](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/10.Trees/10.1HeightOfTree.c) | 1 |
-|                                | [Binary Search Tree: Lowest Common Ancestor](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/10.Trees/10.2LowestCommonAncestor.c) | 1 |
-|                                | [Tree: Is This a Binary Search Tree?](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/10.Trees/10.3IsItBST.cpp) | 2 |
+| **Trees**                      | [Tree: Height of a Binary Tree](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/10.Trees/10.1HeightOfTree.c) | 1 |
+|                                | [Binary Search Tree: Lowest Common Ancestor](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/10.Trees/10.2LowestCommonAncestor.c) | 1 |
+|                                | [Tree: Is This a Binary Search Tree?](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/10.Trees/10.3IsItBST.cpp) | 2 |
 |                                | Tree: Huffman Decoding                                | 2 |
 |                                | Balanced Forest                                       | 3 |
-| **Linked List**                | [Insert a node at a specific position in a linked list - C](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.1Insert.c) | 1 |
-|                                | [Insert a node at a specific position in a linked list - Java](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.1Insert.java) | 1 |
-|                                | [Inserting a Node Into a Sorted Doubly Linked List](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.2DLLInsert.java)     | 1 |
-|                                | [Reverse a doubly linked list](#https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.3DLLreverse.java) | 1 |
+| **Linked List**                | [Insert a node at a specific position in a linked list - C](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.1Insert.c) | 1 |
+|                                | [Insert a node at a specific position in a linked list - Java](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.1Insert.java) | 1 |
+|                                | [Inserting a Node Into a Sorted Doubly Linked List](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.2DLLInsert.java)     | 1 |
+|                                | [Reverse a doubly linked list](https://github.com/chaerim-kim/Data-Structures-and-Algorithms/blob/master/11.LinkedList/11.3DLLreverse.java) | 1 |
 |                                | Find Merge Points of Two lists                        | 1 |
 |                                | Linked Lists: Detect a cycle                          | 1 |
 | **Recursion and Backtracking** | Fibonacci Numbers                                     | 1 |
