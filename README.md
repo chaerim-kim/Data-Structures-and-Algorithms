@@ -13,8 +13,8 @@
 | **Dictionaries and Hashmaps**  | [Ransom Note](https://github.com/chaerim-kim/HackerRank/blob/master/2.Dictionaries%20and%20Hashmaps/2.1RansomNote.py)| 1 |
 |                                | [Two Strings](https://github.com/chaerim-kim/HackerRank/blob/master/2.Dictionaries%20and%20Hashmaps/2.2TwoStrings.py)                                           | 1 |
 |                                | [Sherlock and Anagrams](https://github.com/chaerim-kim/HackerRank/blob/master/2.Dictionaries%20and%20Hashmaps/2.3SherlockAndAnagrams.py) | 2 |
-|                                | Count Triplets                                        | 2 |
-|                                | Frequency Queries                                     | 2 |
+|                                | Count Triplets | 2 |
+|                                | Frequency Queries | 2 |
 | **Sorting**                    | [Bubble Sort](https://github.com/chaerim-kim/HackerRank/blob/master/3.Sorting/3.1BubbleSort.py) | 1 |
 |                                | [Mark and Toys](https://github.com/chaerim-kim/HackerRank/blob/master/3.Sorting/3.2MarkAndToys.py) | 1 |
 |                                | [Comparator](https://github.com/chaerim-kim/HackerRank/blob/master/3.Sorting/3.3Comparator.py) | 2 |
