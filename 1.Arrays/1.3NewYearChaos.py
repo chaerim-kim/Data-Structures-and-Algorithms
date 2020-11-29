@@ -7,32 +7,29 @@ import sys
 # find maximum no of bribes such that it can move 2 forward to get to the final state
 # form original ascending 1,2,3,4,5
 def minimumBribes(q):
-    bribe = 0
+    count = 0
 
-    # q = [2,1,5,3,4]
-    # i+1 = 1,2,3,4,5
     # so if the difference is bigger than 2, it is too chaotic.
-    for i, element in enumerate (q):
-        if  q[i] - (i+1) > 2:
-            print ('Too chaotic')
+    for k,v in enumerate (q):
+        if q[k] -(k+1) > 2:
+            print("Too chaotic")
             return
-
-        # This works, but it causes timeout - hence we need a smarter way to execute the loop comparison.
-        # for j in range(i+1, len(q)):
-        #     if q[j] < q[i]:
-        #         bribe+=1
-
         # Since no one can jump ahead of its original position by more than 2, so any value higher than q[i] can only be till index q[i] -2.
-        # we only compare values that are two ahead.
-        for j in range(max(0, q[i] - 2),i):
-            if q[j] > q[i]:
-                bribe+=1
-    print(bribe)
+
+        # 그니까 이제 세개씩 잘라서 비교 - 그 어레이 숫자부터 -2 로 앞으로 해서
+        # [1,2,5,3,4] 면 1,1 & 2,1 & 5,5, & 3,2/ 3,5 & 4,5/4,3
+        for j in range (max(0,q[k]-2), k):
+            print(q[k],q[j])
+            if q[j] > q[k]:
+                count+=1
+    print (count)
+
+
 
 
 ########## Driver code ##########
-minimumBribes([2,1,5,3,4])     # from 1,2,3,4,5
-# Output: 3
+minimumBribes([1,2,5,3,4])     # from 1,2,3,4,5
+# Output: 2
 #################################
 
 
