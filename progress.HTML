@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel= "stylesheet" href ="main.css">
+    <title>Test</title>
+
+  </head>
+
+  <body>
+
+
+<!-- html content we wanna change -->
+  <div class="alert-box" id="alert">
+    <button onchange="update("loading-bar", 1000)"> change max</button>
+    <progress id = "loading-bar" value="0" max = "120">
+  </div>
+
+
+<!-- js to change len of loading bar -->
+  <script>
+
+  function update(progressBarId, increase){
+    var value = document.getElementById(progressBarId).value;
+    var max = document.getElementById(progressBarId).max;
+
+    value.innerHTML = value + increase;
+
+    if (value >= max){
+      max.innerHTML = value;
+      return true
+    }
+
+    return false
+  }
+  // document.body.innerHTML = `<progress id = "loading-bar" value="0" max = "100">`
+  // console.log(update("loading-bar", 1000)); //false
+  // console.log(update("loading-bar", 50)); //true
+  </script>
+
+  </body>
+</html>
